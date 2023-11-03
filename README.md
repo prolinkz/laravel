@@ -1,5 +1,5 @@
 # laravel | Learning Laravel
-
+[YT channel](https://www.youtube.com/watch?v=FQnhpuYldes&list=PLjVLYmrlmjGfh2rwJjrmKNHzGxCZwBsqj&index=4)
 ## Start
 ### Requirements
 - Installation of *PHP Local Server* (XAMPP, WAMP)

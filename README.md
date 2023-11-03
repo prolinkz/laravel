@@ -3,14 +3,27 @@
 ## Start
 ### Requirements
 - Installation of *PHP Local Server* (XAMPP, WAMP)
+  - To check, run command in command prompt <code> php -v </code>
 - Installation of **Composer** [Composer](https://getcomposer.org/ )
+   - To check, run command in command prompt <code> composer </code>
+      - if the composer didn't run, check the path if it installed or not via <code> echo %PATH% </code>
+     - **PATH:** C/users/jarvis/AppData (hidden folder)/roaming/composer/vendor/bin
+     - ![Path Environment Variable](https://github.com/prolinkz/laravel/assets/45316278/c340f49c-c45e-46f5-9864-de7acc1b8bd9)
 - Installation of Laravel fremework [laravel](https://laravel.com/docs/8.x/installation#installation-via-composer)
+     - To check, run command in command prompt <code> laravel --version </code>
+
 - Installation of *Code Editor* (VS Code, Sublime, Notepad++)
+
+##### What is COmposer?
+- A dependency manager for PHP (Payment gateway requires multi files and it install all required files first)
+- Install package with simple Command ( 
+- Can Update version packages, framwork etc
+- Composer can used with any PHP framwork
 
 ### Create Project
 Once the lab is ready to start work, we first need a project name (Directory to save project files). So first we run the __Laravel__ then create a new project.
-- Run Laravel Globally via command  [laravel Globally](https://laravel.com/docs/8.x/installation#the-laravel-installer)
-  - we aslco run the Laravel via composer, but the Globally helps in working from any path [laravel via composer](https://laravel.com/docs/8.x/installation#installation-via-composer)
+- Run Laravel Globally via command <code> composer global require laravel/installer   [laravel Globally](https://laravel.com/docs/8.x/installation#the-laravel-installer)
+  - we also run the Laravel via composer, but the Globally helps in working from any path [laravel via composer](https://laravel.com/docs/8.x/installation#installation-via-composer)
 - Creating New Project
  * Navigate to the Xamp>htdocs folder, click on address bar and write <code> cmd </code> . The command propmt will open.
  * Now write the artissan command to create a new project <code> laravel new project_name </code>

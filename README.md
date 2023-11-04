@@ -43,61 +43,62 @@ WE can see all the files and folders in project folder when we creae new project
 - Assets (Public Folder) -> Images, Fonts, Audio/Videos, Files, CSS/JavaScript
 
 ##### File Structue
-> app
-    - Kernal.php (
-    - Custom Handler
-  > HHTP (Important MVC
-      * Controllers (Handle all Controllers here)
-      * MidleWare ( provide security feature, Authentication)
-      * Modules (Users information)
-      * Providers (Services Providers)
-
-> Bootstrap
-  * its not a CSS desineing purpose, but it is used to speedup the application. It will cache the directory path to run smoothly
-
-> config
-    *
-
-> databse
-  * migration (handles database management)
-  * seeders ( fake data creation)
-
-> public
-   * index.php is the file to strat.  here all the __CSS__ and _JS_ source files exists.
-
-> Routes
-  * web.php will contians the path routes to the web pages to browse from > resousces directory > views> webpage.blad.php
-  * Routes plays MV role in MVC structure. we create Modle here for Views
-  * ![Laravel Route](https://github.com/prolinkz/laravel/assets/45316278/be13a323-95b3-4505-af5c-b8401c8678ba)
-
-```
-Route::get('/', function(){
-  return view('welcome');
-});
-```
-  * channel.php ( this page for creating and managing broadcasting
-  * api.php (this paage is to manage the api modules, separate from web application routes to avoid conflict with.
-
-> Services
-  * it handle the website services
-
-> storage directory
-  - it holds and manage the storage files directory
-
-> tests
-  - test case of an application
-
-> vendor
-  - provides package files and resources.
-
-> .env file
-  * web application environment setup file, which contains
-
-> composer.json file
-  * packages information , PHP version, LAravel version, React packages
-
-> server.php file
-  * contains
+  > app
+      - Kernal.php (
+      - Custom Handler
+  
+    >> HHTP (Important MVC
+        * Controllers (Handle all Controllers here)
+        * MidleWare ( provide security feature, Authentication)
+        * Modules (Users information)
+        * Providers (Services Providers)
+  
+  > Bootstrap
+    * its not a CSS desineing purpose, but it is used to speedup the application. It will cache the directory path to run smoothly
+  
+  > config
+      *
+  
+  > databse
+    * migration (handles database management)
+    * seeders ( fake data creation)
+  
+  > public
+     * index.php is the file to strat.  here all the __CSS__ and _JS_ source files exists.
+  
+  > Routes
+    * web.php will contians the path routes to the web pages to browse from > resousces directory > views> webpage.blad.php
+    * Routes plays MV role in MVC structure. we create Modle here for Views
+    * ![Laravel Route](https://github.com/prolinkz/laravel/assets/45316278/be13a323-95b3-4505-af5c-b8401c8678ba)
+  
+  ```
+  Route::get('/', function(){
+    return view('welcome');
+  });
+  ```
+    * channel.php ( this page for creating and managing broadcasting
+    * api.php (this paage is to manage the api modules, separate from web application routes to avoid conflict with.
+  
+  > Services
+    * it handle the website services
+  
+  > storage directory
+    - it holds and manage the storage files directory
+  
+  > tests
+    - test case of an application
+  
+  > vendor
+    - provides package files and resources.
+  
+  > .env file
+    * web application environment setup file, which contains
+  
+  > composer.json file
+    * packages information , PHP version, LAravel version, React packages
+  
+  > server.php file
+    * contains
 
 
 ## Routing
@@ -131,11 +132,13 @@ route from blade view pages
 ```
 <a href=""> Post Page </a>
 ```
+
 Route to sub-page 
 ```
 Route::get('/post/firstpost', function(){
   return view('first-post');
 });
+```
 
 Routing based testing
 - Open page inspect > Network > refresh page, you will see the tabs > Headers, Network, Responce 

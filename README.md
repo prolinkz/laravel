@@ -155,6 +155,7 @@ Routing based testing
 
 #### Route Parameters
 [YT](https://www.youtube.com/watch?v=ywGqCuM-vek)  [Route Parameters](https://www.youtube.com/watch?v=ywGqCuM-vek&list=PL0b6OzIxLPbz7JK_YYrRJ1KxlGG4diZHJ&index=6) 
-- ![image](https://github.com/prolinkz/laravel/assets/45316278/ed87cd14-c919-416e-ae90-7419d02bb0ad)
+-
+-  ![image](https://github.com/prolinkz/laravel/assets/45316278/ed87cd14-c919-416e-ae90-7419d02bb0ad)
 - 
 

@@ -159,3 +159,25 @@ Routing based testing
 -  ![image](https://github.com/prolinkz/laravel/assets/45316278/ed87cd14-c919-416e-ae90-7419d02bb0ad)
 - 
 
+### Controllers
+Controllers are 
+To create a controller . here we are creating PagesController controller to manage all pages
+```
+php artisan make:controller PagesController
+```
+
+Now browse the project directory ** > app > Http > Controllers > here the PagesController.php will added **
+Open this page, and write 
+```
+class PagesController extends Controller
+{
+  public function index(){
+    return view('pages.index');
+  }
+}
+```
+Also create an index page under **Resources > Views > pages** named index.blade.php and add some html code to it.
+
+
+
+

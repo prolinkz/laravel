@@ -210,5 +210,53 @@ The default connection is on start of page, like here MySQL
   ![Default Databse Connection](https://github.com/prolinkz/laravel/assets/45316278/9060c14d-cc7d-49da-882f-3ac57eb4e302)
 
 
+### Create Database:
+We can create database from localhost/phpmyadmin o rdirect through laravel Migration command 
+
+
+### Create  Table
+Similarly to the dtabase, we can create table thorugh XMPP phpmyadmin or through schema command using table_name and columns with name and their datatypes
+  ![Migratation - create table](https://github.com/prolinkz/laravel/assets/45316278/749a145e-1215-4209-89ba-6afc83799c8b)
+
+```
+php artisan make:migration create_students_table
+```
+the above command will create table 'students_table' and migration file under migration directory. 
+The defalut colums would be id,, and timestamp. we can add/update, like below
+
+```
+schema::create(table_name, function(blueprint,$table))
+  $table->id();
+  $table->string('name',30);
+  $table->string('city',20);
+```
+Blueprint is the classs of Migration which control all the databse funtions and data types like it convert Varchar of MySQL convert into String. Once we create table using command Run 'migrate' command to creaet table in database.
+  ![image](https://github.com/prolinkz/laravel/assets/45316278/966fbf34-bf23-4075-8c63-0900f2205799)
+
+Once we complete table , we would need to run migrate command to update entries in database
+```
+php artisan migrate
+```
+
+We can check all the migrated tables through
+```
+php artisan migrate:status
+```
+
+#### create another table 'Users'
+```
+php artisan make:migration create_users_table
+```
+add/edit columns and run migrate command to update MySQL
+```
+php artisan migrate
+```
+
+
+
+
+
+
+
 
 

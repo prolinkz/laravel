@@ -161,12 +161,12 @@ Routing based testing
 
 ### Controllers
 Controllers are 
-To create a controller . here we are creating PagesController controller to manage all pages
+- To create a controller . here we are creating PagesController controller to manage all pages. First create a Pages folder under View folder, open in cmd and write
 ```
 php artisan make:controller PagesController
 ```
 
-Now browse the project directory ** > app > Http > Controllers > here the PagesController.php will added **
+- Now browse the project directory ** > app > Http > Controllers > here the PagesController.php will added **
 Open this page, and write 
 ```
 class PagesController extends Controller
@@ -174,9 +174,19 @@ class PagesController extends Controller
   public function index(){
     return view('pages.index');
   }
+  public function about(){
+    return view('pages.about');
+  }
 }
 ```
-Also create an index page under **Resources > Views > pages** named index.blade.php and add some html code to it.
+- Also create an index page under **Resources > Views > pages** named index.blade.php and add some html code to it.
+
+- Now to access the pages, set the routes
+  ```
+  Route::get('/','PagesController@index');
+   Route::get('/about','PagesController@about');
+  
+  ```
 
 
 

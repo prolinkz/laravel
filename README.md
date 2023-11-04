@@ -188,3 +188,27 @@ class PagesController extends Controller
 
 ## Model
 ### Work with Database (MySQL)
+- In MySQL we perform functions like ;
+  1. Create Database
+  2. Create Tables in DB (Column name, Datatype)
+  3. Insert data in tables
+  4. Code with data tables
+
+- Steps to Work with Mode
+  Similarly in Laravel the Model performs some functionalities like;
+  1. Create Database
+  2. Create Database Migration (Create Tables in database)
+  3. Seeding (Insert initial data in tables)
+  ![Steps to Work with Model](https://github.com/prolinkz/laravel/assets/45316278/687b3826-0dee-4585-a4c4-aaa81a66467c)
+
+The database configuration controll by .env file having variables of db name, server name, port, password
+  ![.env file](https://github.com/prolinkz/laravel/assets/45316278/298076ef-5829-439b-a3ff-7bbd95b0f826)
+  Once the variable are set, these are controlled and managed from Config>databse.php file.
+  
+Laravel support 4 types of database which are MySQL, SQLlite, pgsql, and SQLServer which are located at Config>databse.php
+The default connection is on start of page, like here MySQL
+  ![Default Databse Connection](https://github.com/prolinkz/laravel/assets/45316278/9060c14d-cc7d-49da-882f-3ac57eb4e302)
+
+
+
+

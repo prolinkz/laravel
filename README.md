@@ -1,5 +1,7 @@
 # laravel | Learning Laravel
 [YT channel](https://www.youtube.com/watch?v=FQnhpuYldes&list=PLjVLYmrlmjGfh2rwJjrmKNHzGxCZwBsqj&index=4)
+[Baba YT](https://www.youtube.com/watch?v=-yFJh8CavLI&list=PL0b6OzIxLPbz7JK_YYrRJ1KxlGG4diZHJ&index=4)
+
 ## Start
 ### Requirements
 - Installation of *PHP Local Server* (XAMPP, WAMP)
@@ -33,16 +35,23 @@ Once the lab is ready to start work, we first need a project name (Directory to 
 ## Directory Structure
 We know that laravel application start run via host  <code> php artisan serve </code>  command.
 WE can see all the files and folders in project folder when we creae new project
+##### Basic Folders are;
+- Model -> Database/ sQL queries handlling
+- Controller -> Business Logics Files
+- View -> HTML files
+- Routing -> URL/path Defining files 
+- Assets (Public Folder) -> Images, Fonts, Audio/Videos, Files, CSS/JavaScript
 
+##### File Structue
 > app
     - Kernal.php (
     - Custom Handler
->
-    >> HHTP (Important MVC
+  > HHTP (Important MVC
       * Controllers (Handle all Controllers here)
       * MidleWare ( provide security feature, Authentication)
       * Modules (Users information)
       * Providers (Services Providers)
+
 > Bootstrap
   * its not a CSS desineing purpose, but it is used to speedup the application. It will cache the directory path to run smoothly
 
@@ -57,8 +66,9 @@ WE can see all the files and folders in project folder when we creae new project
    * index.php is the file to strat.  here all the __CSS__ and _JS_ source files exists.
 
 > Routes
-  * web.php (defaullt page) will contians the path routes to the page to browse from > resousces directory > views> webpage.blad.php
+  * web.php will contians the path routes to the web pages to browse from > resousces directory > views> webpage.blad.php
   * Routes plays MV role in MVC structure. we create Modle here for Views
+  * ![Laravel Route](https://github.com/prolinkz/laravel/assets/45316278/be13a323-95b3-4505-af5c-b8401c8678ba)
 
 ```
 Route::get('/', function(){
@@ -93,3 +103,53 @@ Route::get('/', function(){
 ## Routing
 
 
+```
+Route::get('/', function(){
+  return view('welcome');
+});
+```
+
+create a new route for a new web page post.blade.php
+```
+Route::get('/post', function(){
+  return view('post');
+});
+```
+
+We can create route in sigle line to call view method instead of __get()__ method to post blade with '/post' route.
+```
+Route::view('post', '/post');
+});
+```
+we can create any name for route to the view. like we create /hello route to the post page view
+```
+Route::get('/hello', function(){
+  return view('post');
+});
+```
+route from blade view pages
+```
+<a href=""> Post Page </a>
+```
+Route to sub-page 
+```
+Route::get('/post/firstpost', function(){
+  return view('first-post');
+});
+
+Routing based testing
+- Open page inspect > Network > refresh page, you will see the tabs > Headers, Network, Responce 
+
+
+##### PHP Artisan Commands
+- To check all the artisan command , write <code> php artisan </code>
+- If we only check the specific tyype command, like Route commands, then <code> php artisan route -h </code>. This will show all the route commands
+- To run the avialable command for Route list <code> php artisan route:list</code>
+- The above route list will show all the system packages routes and custom routes list. To avoid the packages routes run <code> php artisan route:list --except-vendor </code> it will only show our routes
+- To check particular Route, like to only show Post route we used  <code> php artisan route:list -path=post </code>
+
+
+##### Route Parameters
+[YT](https://www.youtube.com/watch?v=ywGqCuM-vek)
+[Route Parameters](https://www.youtube.com/watch?v=ywGqCuM-vek&list=PL0b6OzIxLPbz7JK_YYrRJ1KxlGG4diZHJ&index=6) 
+- 

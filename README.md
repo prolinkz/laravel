@@ -186,7 +186,7 @@ class PagesController extends Controller
    Route::get('/about','PagesController@about');  
   ```
 
-## Model
+## Model - Migrate
 ### Work with Database (MySQL)
 - In MySQL we perform functions like ;
   1. Create Database
@@ -251,12 +251,72 @@ add/edit columns and run migrate command to update MySQL
 ```
 php artisan migrate
 ```
+we can check the migration status to check tables are creted or not
+```
+php artisan migrate:status
+```
+
+#### How to Undo the Table migration
+
+1. The first method for undo/delete the table is Rollback. it will delete last migrate like it will delete the Users table which is create at very last.
+  ```
+  php artisan migrate:rollback
+  ```
+  1.1 the **Rollback** commands consists two flags which are step, which means to delete last 3 scommands affects
+  ```
+  php artisan migrate:rollback --step=3
+  ```
+  1.2 the Rollback commands flag **--batch** which is used remove particular command. . like to remove only last 3rd command 
+  ```
+  php artisan migrate:rollback --batch=3  
+  ```
+  
+2. The second method command is **reset** which remove all tables which are ceated using migrations
+  ```
+  php artisan migrate:reset
+  ```
+
+**Refresh:** The below command will refresh , it will roleback all table and create again fresh tables
+  ```
+  php artisan migrate:refresh
+  ```
+
+**Fresh:** It will not refresh/rollback , but remove all table and create freah tables
+  ```
+  php artisan migrate:fresh
+  ```
+  - Both Fresh and Refresh do same work.
+
+#### How to crete Model and Migrate files at once
+  ```
+  php artisan make:model Task -m
+  ```
+it will create Model and Task task table. We can check Model in __app>Model folder__ and Migrate file in __database>Migrations file__
+
+
+#### Data Types used in Laravel
+##### Migration Data types
+SQL data types and Laravel data types are same but only changes names for datatypes  [Data types](https://laravel.com/docs/10.x/migrations)
+
+#### Migration Review 
+![image](https://github.com/prolinkz/laravel/assets/45316278/f77efe46-1378-4dcf-bc61-d86094cf4f58)
 
 
 
+### Migration Modifiers & Constraints
+#### Modification in Migration tables 
+[YT](https://www.youtube.com/watch?v=VHf5alNBLjI)
+- Column Modification: add/ edit/ delete/change column order or datatypes or it size
+- Table Modification  : rename table/delete table
 
+- Add Column with Migration 
+  ```
+  php artisan make:migration update_students_table --table=students
+  ```
 
+![image](https://github.com/prolinkz/laravel/assets/45316278/a319ba93-deac-43f1-83af-5f49dfe7979a)
 
-
+3 steps to update table
+![image](https://github.com/prolinkz/laravel/assets/45316278/9dad9d4c-83a4-4d9c-8737-67e34f996f49)
 
 

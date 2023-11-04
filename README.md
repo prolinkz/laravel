@@ -47,7 +47,7 @@ WE can see all the files and folders in project folder when we creae new project
       - Kernal.php (
       - Custom Handler
   
-    >> HHTP (Important MVC
+  >> HHTP (Important MVC
         * Controllers (Handle all Controllers here)
         * MidleWare ( provide security feature, Authentication)
         * Modules (Users information)
@@ -57,7 +57,7 @@ WE can see all the files and folders in project folder when we creae new project
     * its not a CSS desineing purpose, but it is used to speedup the application. It will cache the directory path to run smoothly
   
   > config
-      *
+      * configuration 
   
   > databse
     * migration (handles database management)
@@ -67,7 +67,9 @@ WE can see all the files and folders in project folder when we creae new project
      * index.php is the file to strat.  here all the __CSS__ and _JS_ source files exists.
   
   > Routes
-    * web.php will contians the path routes to the web pages to browse from > resousces directory > views> webpage.blad.php
+    * **web.php** will contians the path routes to the web pages to browse from > resousces directory > views> webpage.blad.php
+    * **channel.php** ( this page for creating and managing broadcasting
+    * **api.php** (this paage is to manage the api modules, separate from web application routes to avoid conflict with.
     * Routes plays MV role in MVC structure. we create Modle here for Views
     * ![Laravel Route](https://github.com/prolinkz/laravel/assets/45316278/be13a323-95b3-4505-af5c-b8401c8678ba)
   
@@ -76,8 +78,7 @@ WE can see all the files and folders in project folder when we creae new project
     return view('welcome');
   });
   ```
-    * channel.php ( this page for creating and managing broadcasting
-    * api.php (this paage is to manage the api modules, separate from web application routes to avoid conflict with.
+
   
   > Services
     * it handle the website services
@@ -144,7 +145,7 @@ Routing based testing
 - Open page inspect > Network > refresh page, you will see the tabs > Headers, Network, Responce 
 
 
-##### PHP Artisan Commands
+#### PHP Artisan Commands
 - To check all the artisan command , write <code> php artisan </code>
 - If we only check the specific tyype command, like Route commands, then <code> php artisan route -h </code>. This will show all the route commands
 - To run the avialable command for Route list <code> php artisan route:list</code>
@@ -152,7 +153,8 @@ Routing based testing
 - To check particular Route, like to only show Post route we used  <code> php artisan route:list -path=post </code>
 
 
-##### Route Parameters
-[YT](https://www.youtube.com/watch?v=ywGqCuM-vek)
-[Route Parameters](https://www.youtube.com/watch?v=ywGqCuM-vek&list=PL0b6OzIxLPbz7JK_YYrRJ1KxlGG4diZHJ&index=6) 
+#### Route Parameters
+[YT](https://www.youtube.com/watch?v=ywGqCuM-vek)  [Route Parameters](https://www.youtube.com/watch?v=ywGqCuM-vek&list=PL0b6OzIxLPbz7JK_YYrRJ1KxlGG4diZHJ&index=6) 
+- ![image](https://github.com/prolinkz/laravel/assets/45316278/ed87cd14-c919-416e-ae90-7419d02bb0ad)
 - 
+

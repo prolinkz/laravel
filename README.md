@@ -25,12 +25,12 @@
 ### Create Project
 Once the lab is ready to start work, we first need a project name (Directory to save project files). So first we run the __Laravel__ then create a new project.
 - Run Laravel Globally via command <code> composer global require laravel/installer   [laravel Globally](https://laravel.com/docs/8.x/installation#the-laravel-installer)
-  - we also run the Laravel via composer, but the Globally helps in working from any path [laravel via composer](https://laravel.com/docs/8.x/installation#installation-via-composer)
+- we also run the Laravel via composer, but the Globally helps in working from any path [laravel via composer](https://laravel.com/docs/8.x/installation#installation-via-composer)
 - Creating New Project
- * Navigate to the Xamp>htdocs folder, click on address bar and write <code> cmd </code> . The command propmt will open.
- * Now write the artissan command to create a new project <code> laravel new project_name </code>
- * Enter into the project file via <code> cd example-app </code>
- * Run the Project via <code> php artisan serve </code> this will start the project to browse
+  * Navigate to the Xamp>htdocs folder, click on address bar and write <code> cmd </code> . The command propmt will open.
+  * Now write the artissan command to create a new project <code> laravel new project_name </code>
+  * Enter into the project file via <code> cd example-app </code>
+  * Run the Project via <code> php artisan serve </code> this will start the project to browse
 
 ## Directory Structure
 We know that laravel application start run via host  <code> php artisan serve </code>  command.
@@ -42,7 +42,7 @@ WE can see all the files and folders in project folder when we creae new project
 - Routing -> URL/path Defining files 
 - Assets (Public Folder) -> Images, Fonts, Audio/Videos, Files, CSS/JavaScript
 
-##### File Structue
+### File Structue
   > app
       - Kernal.php (
       - Custom Handler
@@ -78,7 +78,6 @@ WE can see all the files and folders in project folder when we creae new project
     return view('welcome');
   });
   ```
-
   
   > Services
     * it handle the website services
@@ -145,7 +144,7 @@ Routing based testing
 - Open page inspect > Network > refresh page, you will see the tabs > Headers, Network, Responce 
 
 
-#### PHP Artisan Commands
+## PHP Artisan Commands
 - To check all the artisan command , write <code> php artisan </code>
 - If we only check the specific tyype command, like Route commands, then <code> php artisan route -h </code>. This will show all the route commands
 - To run the avialable command for Route list <code> php artisan route:list</code>
@@ -153,13 +152,13 @@ Routing based testing
 - To check particular Route, like to only show Post route we used  <code> php artisan route:list -path=post </code>
 
 
-#### Route Parameters
+## Route Parameters
 [YT](https://www.youtube.com/watch?v=ywGqCuM-vek)  [Route Parameters](https://www.youtube.com/watch?v=ywGqCuM-vek&list=PL0b6OzIxLPbz7JK_YYrRJ1KxlGG4diZHJ&index=6) 
 -
 -  ![image](https://github.com/prolinkz/laravel/assets/45316278/ed87cd14-c919-416e-ae90-7419d02bb0ad)
 - 
 
-### Controllers
+## Controllers
 Controllers are 
 - To create a controller . here we are creating PagesController controller to manage all pages. First create a Pages folder under View folder, open in cmd and write
 ```
@@ -184,10 +183,8 @@ class PagesController extends Controller
 - Now to access the pages, set the routes
   ```
   Route::get('/','PagesController@index');
-   Route::get('/about','PagesController@about');
-  
+   Route::get('/about','PagesController@about');  
   ```
 
-
-
-
+## Model
+### Work with Database (MySQL)

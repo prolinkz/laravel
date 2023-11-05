@@ -376,8 +376,10 @@ Practical entry
 Restriction is by default, means values of Foriengn key doen't change but we clso can use 'restrict' . like on update we use cascade and for deletre we use restrict.
 
 
+![image](https://github.com/prolinkz/laravel/assets/45316278/b3fe30f3-b51e-44c7-aeae-1f7b24cc58a2)
 
 
+![image](https://github.com/prolinkz/laravel/assets/45316278/65ec77c5-5f23-4356-bdda-589c311bc839)
 
 
 

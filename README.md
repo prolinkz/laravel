@@ -372,6 +372,9 @@ Practical entry
 ![image](https://github.com/prolinkz/laravel/assets/45316278/b34ece67-8132-43ab-ba59-9fd20b4508cb)
 
 
+#### Restrict
+Restriction is by default, means values of Foriengn key doen't change but we clso can use 'restrict' . like on update we use cascade and for deletre we use restrict.
+
 
 
 

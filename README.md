@@ -320,3 +320,16 @@ SQL data types and Laravel data types are same but only changes names for dataty
 ![image](https://github.com/prolinkz/laravel/assets/45316278/9dad9d4c-83a4-4d9c-8737-67e34f996f49)
 
 
+### Column Rename, delete, size update
+- Rename Column: $table->renameColumn('from','to');
+- Drop Column: $table->dropColumn('city');
+- Drop Multiple Columns:  $table->dropColumn(['city', 'Tel', 'contact']);
+- Change Data type size: $table->string('name',50)->change();
+- ![image](https://github.com/prolinkz/laravel/assets/45316278/1762f985-bb17-4b56-b395-bbcfec96677a)
+
+
+### Change Column Order
+Cretae 2 new columns 'address' and 'city' **after** password column, we will use **after()** function
+![image](https://github.com/prolinkz/laravel/assets/45316278/cccbc02d-c7c5-4570-b9ad-bdc01bb617b3)
+
+

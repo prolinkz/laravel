@@ -159,7 +159,12 @@ Routing based testing
 - 
 
 ## Controllers
-Controllers are 
+In Laravel, Controllers are responsible for handling HTTP requests. They act as an intermediary between the HTTP request and the application logic. Controllers process the request, call the appropriate models, and then return an HTTP response.
+
+To define a controller in Laravel, you can use the following command:
+<code> php artisan make:controller Controller </code>
+
+
 - To create a controller . here we are creating PagesController controller to manage all pages. First create a Pages folder under View folder, open in cmd and write
 ```
 php artisan make:controller PagesController

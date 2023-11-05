@@ -1,4 +1,4 @@
-![image](https://github.com/prolinkz/laravel/assets/45316278/48021919-c466-42b2-900b-ed00aa8e7c15)# laravel | Learning Laravel
+# laravel | Learning Laravel
 [YT channel](https://www.youtube.com/watch?v=FQnhpuYldes&list=PLjVLYmrlmjGfh2rwJjrmKNHzGxCZwBsqj&index=4)
 [Baba YT](https://www.youtube.com/watch?v=-yFJh8CavLI&list=PL0b6OzIxLPbz7JK_YYrRJ1KxlGG4diZHJ&index=4)
 
@@ -360,7 +360,7 @@ Some of other Laravel Column Modifier
 [YT](https://www.youtube.com/watch?v=FM70Ssh0bMc)
 
 PRimary key data type should be Interger or Double, and AUTO Increment
-
+![image](https://github.com/prolinkz/laravel/assets/45316278/48021919-c466-42b2-900b-ed00aa8e7c15)
 ![image](https://github.com/prolinkz/laravel/assets/45316278/7112ec8b-6286-4099-9e20-3df3035933a4)
 
 ![image](https://github.com/prolinkz/laravel/assets/45316278/0b0a813d-35d2-494e-934a-a19eadb88441)

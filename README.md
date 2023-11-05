@@ -1,4 +1,4 @@
-# laravel | Learning Laravel
+![image](https://github.com/prolinkz/laravel/assets/45316278/48021919-c466-42b2-900b-ed00aa8e7c15)# laravel | Learning Laravel
 [YT channel](https://www.youtube.com/watch?v=FQnhpuYldes&list=PLjVLYmrlmjGfh2rwJjrmKNHzGxCZwBsqj&index=4)
 [Baba YT](https://www.youtube.com/watch?v=-yFJh8CavLI&list=PL0b6OzIxLPbz7JK_YYrRJ1KxlGG4diZHJ&index=4)
 
@@ -343,13 +343,37 @@ Cretae 2 new columns 'address' and 'city' **after** password column, we will use
 
 ![image](https://github.com/prolinkz/laravel/assets/45316278/3b88abf6-f3b7-4619-bc66-34b80f30c385)
 
-#### Constraints 
+#### Constraints - Restrictions
 ![image](https://github.com/prolinkz/laravel/assets/45316278/bd48dc20-8196-42e8-9844-c388b21fe172)
 
 ![image](https://github.com/prolinkz/laravel/assets/45316278/d92a136f-b848-4e2a-b582-79eab901d721)
 
+![image](https://github.com/prolinkz/laravel/assets/45316278/a0d74f4d-4fa1-45fc-9c37-60c1011f1b5b) 
+
+
 Some of other Laravel Column Modifier 
 ![image](https://github.com/prolinkz/laravel/assets/45316278/afbad5a3-69c1-4f9b-a4db-217accb759de)
+
+
+## Migration Primary & Foreign key
+
+[YT](https://www.youtube.com/watch?v=FM70Ssh0bMc)
+
+PRimary key data type should be Interger or Double, and AUTO Increment
+
+![image](https://github.com/prolinkz/laravel/assets/45316278/7112ec8b-6286-4099-9e20-3df3035933a4)
+
+![image](https://github.com/prolinkz/laravel/assets/45316278/0b0a813d-35d2-494e-934a-a19eadb88441)
+
+### Foriegn Key Cascade
+We we update or delete the Parent table id it will not work because it connect with some foriegn key, so the aravel contains 'Cascade' function for Update or Delete 
+![image](https://github.com/prolinkz/laravel/assets/45316278/dd2623f1-c237-4002-ad71-392a2fdbd25a)
+Practical entry
+![image](https://github.com/prolinkz/laravel/assets/45316278/b34ece67-8132-43ab-ba59-9fd20b4508cb)
+
+
+
+
 
 
 

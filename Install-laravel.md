@@ -69,8 +69,11 @@ php artisan migrate
 
 
 
-#### lara
+#### laravel Authentication
+[Custom Authentication with Sessions| Login, Register, Logout](https://www.youtube.com/watch?v=3yXcVrV-njU)
+
+### Register
 
 ### Signin
 
-### Register
+

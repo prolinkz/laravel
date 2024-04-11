@@ -4,7 +4,7 @@
 
 ## Start
 ### Requirements
-- Installation of *PHP Local Server* (XAMPP, WAMP)
+- Installation of *PHP Local Server* (XAMPP, WAMP, Laragon)
   - To check, run command in command prompt <code> php -v </code>
 - Installation of **Composer** [Composer](https://getcomposer.org/ )
    - To check, run command in command prompt <code> composer </code>

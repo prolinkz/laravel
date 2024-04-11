@@ -8,16 +8,16 @@ Once the lab is ready to start work, we first need a project name (Directory to 
 Run Laravel Globally via command <code> composer global require laravel/installer </code>  
 composer create-project --prefer-dist laravel/laravel larainfo
 
-Now write the artissan command to create a new project <code> laravel new project_name </code>
+Now write the artisan command to create a new project <code> laravel new project-name </code>
 
-Enter into the project file via <code> cd example-app </code>
+Enter into the project file via <code> cd project-name </code>
 
 Run the Project via <code> php artisan serve </code> this will start the project to browse
 
 ### Step 2: Set Up Database Details in ENV
-Now, you have to connect the laravel app to the database, hence open the .env configuration file and add the database credentials as suggested below.
+Now, you have to connect the laravel app to the database, hence open the <b> .env </b> configuration file and add the database credentials as suggested below.
 
-.env
+.env file
 
 ```
 DB_CONNECTION=mysql
@@ -33,7 +33,7 @@ The Bootstrap and Vue Scaffolding provided by Laravel is located in the <code> l
 ```
 composer require laravel/ui
 ```
-Once the <code laravel/ui </code> package has been installed, you may installed the Scaffolding using the Artisan command;
+Once the <code> laravel/ui </code> package has been installed, you may installed the Scaffolding using the Artisan command;
 
 ### Step 4: Generate Basic Scaffolding...
 use anyone for you requirements

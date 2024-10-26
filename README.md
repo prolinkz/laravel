@@ -2,25 +2,6 @@
 [YT channel](https://www.youtube.com/watch?v=FQnhpuYldes&list=PLjVLYmrlmjGfh2rwJjrmKNHzGxCZwBsqj&index=4)
 [Baba YT](https://www.youtube.com/watch?v=-yFJh8CavLI&list=PL0b6OzIxLPbz7JK_YYrRJ1KxlGG4diZHJ&index=4)
 
-## Start
-### Requirements
-- Installation of *PHP Local Server* (XAMPP, WAMP, Laragon)
-  - To check, run command in command prompt <code> php -v </code>
-- Installation of **Composer** [Composer](https://getcomposer.org/ )
-   - To check, run command in command prompt <code> composer </code>
-      - if the composer didn't run, check the path if it installed or not via <code> echo %PATH% </code>
-     - **PATH:** C/users/jarvis/AppData (hidden folder)/roaming/composer/vendor/bin
-     - ![Path Environment Variable](https://github.com/prolinkz/laravel/assets/45316278/c340f49c-c45e-46f5-9864-de7acc1b8bd9)
-- Installation of Laravel fremework [laravel](https://laravel.com/docs/8.x/installation#installation-via-composer)
-     - To check, run command in command prompt <code> laravel --version </code>
-
-- Installation of *Code Editor* (VS Code, Sublime, Notepad++)
-
-##### What is COmposer?
-- A dependency manager for PHP (Payment gateway requires multi files and it install all required files first)
-- Install package with simple Command ( 
-- Can Update version packages, framwork etc
-- Composer can used with any PHP framwork
 
 ### Create Project
 Once the lab is ready to start work, we first need a project name (Directory to save project files). So first we run the __Laravel__ then create a new project.

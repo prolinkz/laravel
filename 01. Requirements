@@ -1,0 +1,19 @@
+## Start
+### Requirements
+1- Installation of *PHP Local Server* (XAMPP, WAMP, Laragon)
+  - To check, run command in command prompt <code> php -v </code>
+2- Installation of **Composer** [Composer](https://getcomposer.org/ )
+   - To check, run command in command prompt <code> composer </code>
+      - if the composer didn't run, check the path if it installed or not via <code> echo %PATH% </code>
+     - **PATH:** C/users/jarvis/AppData (hidden folder)/roaming/composer/vendor/bin
+     - ![Path Environment Variable](https://github.com/prolinkz/laravel/assets/45316278/c340f49c-c45e-46f5-9864-de7acc1b8bd9)
+3- Installation of Laravel fremework [laravel](https://laravel.com/docs/8.x/installation#installation-via-composer)
+     - To check, run command in command prompt <code> laravel --version </code>
+
+4- Installation of *Code Editor* (VS Code, Sublime, Notepad++)
+
+##### What is COmposer?
+- A dependency manager for PHP (Payment gateway requires multi files and it install all required files first)
+- Install package with simple Command ( 
+- Can Update version packages, framwork etc
+- Composer can used with any PHP framwork
